@@ -18,9 +18,9 @@ header {
 
 .home {
   width: 94%;
-  height: calc(100vh);
+  min-height: calc(100vh);
   padding-top: 100px;
-  margin: 0 46px;
+  margin: auto;
   font-size: 20px;
   line-height: 30px;
   text-align: justify;
@@ -28,9 +28,9 @@ header {
 
 .services, .events, .gallery, .about_us {
   width: 94%;
-  height: calc(100vh);
+  min-height: calc(100vh);
   padding-top: 100px;
-  margin: 0 46px;
+  margin: auto;
   font-size: 20px;
   line-height: 30px;
   text-align: justify;
@@ -68,8 +68,12 @@ nav ul {
   padding: 0;
   text-align: right;
   margin: 0;
-  padding-right: 40px;
+  /*padding-right: 40px;*/
   transition: 1s;
+
+  @media(min-width: 786px) {
+    padding-right: 40px;
+  }
 }
 
 nav.black ul {
@@ -78,7 +82,10 @@ nav.black ul {
 
 nav ul li {
   display: inline-block;
-  padding: 16px 40px;;
+  /*padding: 16px 40px;*/
+  @media(min-width: 786px) {
+    padding: 16px 40px;
+  }
 }
 
 nav ul li a {
@@ -117,12 +124,13 @@ nav ul li a {
 
   .showing {
     max-height: 34em;
+    height: 100vh;
   }
 
   nav ul li {
     box-sizing: border-box;
     width: 100%;
-    padding: 24px;
+    /*padding: 24px;*/
     text-align: center;
   }
 

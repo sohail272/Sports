@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $(".menu-icon").on("click", function() {
+  $(".menu-icon, .nav-link").on("click", function() {
     $("nav ul").toggleClass("showing");
   });
 
